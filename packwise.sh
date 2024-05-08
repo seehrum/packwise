@@ -22,6 +22,7 @@ show_help() {
     echo "  -f filename                    Import package names from a specified file and add them to $PACKAGE_FILE with [ADD] prefix, ready for installation."
     echo "  -c                             Check for and report any duplicate package entries in $PACKAGE_FILE, helping maintain a clean package list."
     echo "  -T                             Toggle all packages in $PACKAGE_FILE between [REMOVE] and [ADD] to [*], facilitating bulk changes to package statuses."
+    echo "  -x                             Changes packages marked with prefix [*] to [REMOVE] in $PACKAGE_FILE"
     echo "  -h                             Display this help message and exit."
     echo
     echo "Understanding packages.list:"
@@ -172,10 +173,16 @@ toggle_packages() {
     fi
 }
 
+mark_packages_As_Added(){
+    check_packlist_exist
+    sed -i 's/\[\*\]/[REMOVE]/g' $PACKAGE_FILE
+    echo "packages with prefix [*] are now [REMOVE]"
+}
+
 OPT_FOUND=0
 
 # Parse command line options
-while getopts ":iraA:R:lcf:hTS" opt; do
+while getopts ":iraA:R:lcf:hTSx" opt; do
     case ${opt} in
         i ) install_packages
             OPT_FOUND=1
@@ -199,6 +206,9 @@ while getopts ":iraA:R:lcf:hTS" opt; do
             OPT_FOUND=1
             ;;
         c ) check_repeated_packages 
+            OPT_FOUND=1
+	   ;;
+        x ) mark_packages_As_Added
             OPT_FOUND=1
 	   ;;
         T ) toggle_packages
