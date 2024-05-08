@@ -2,9 +2,6 @@
 # PackWise v1.0
 # GNU bash, versão 5.1.16(1)-release (x86_64-pc-linux-gnu)
 
-# useful commands
-# sed -i 's/\[ADD\]\|\[REMOVE\]/[\*]/g' packages.list # makes all packages from packages.list go to the removal area
-
 # Define the file that contains the package list
 PACKAGE_FILE="packages.list"
 INSTALL_LOG="addpkg.log"
@@ -24,7 +21,7 @@ show_help() {
     echo "  -l                             Re-generate $PACKAGE_FILE with all currently installed packages, marked with [ADD]."
     echo "  -f filename                    Import package names from a specified file and add them to $PACKAGE_FILE with [ADD] prefix, ready for installation."
     echo "  -c                             Check for and report any duplicate package entries in $PACKAGE_FILE, helping maintain a clean package list."
-    echo "  -T                             Toggle all packages in $PACKAGE_FILE between [ADD] and [*], facilitating bulk changes in package statuses."
+    echo "  -T                             Toggle all packages in $PACKAGE_FILE between [REMOVE] and [ADD] to [*], facilitating bulk changes to package statuses."
     echo "  -h                             Display this help message and exit."
     echo
     echo "Understanding packages.list:"
