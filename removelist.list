@@ -1260,7 +1260,6 @@
 [REMOVE] samba-libs:amd64
 [REMOVE] sane-airscan
 [REMOVE] sane-utils
-[REMOVE] sbsigntool
 [REMOVE] screengrab
 [REMOVE] scrot
 [REMOVE] sddm
