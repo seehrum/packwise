@@ -207,9 +207,6 @@
 [REMOVE] gir1.2-udisks-2.0:amd64
 [REMOVE] git
 [REMOVE] git-man
-[REMOVE] glib-networking:amd64
-[REMOVE] glib-networking-common
-[REMOVE] glib-networking-services
 [REMOVE] gnome-accessibility-themes
 [REMOVE] gnome-keyring
 [REMOVE] gnome-keyring-pkcs11:amd64
@@ -1097,7 +1094,6 @@
 [REMOVE] muon
 [REMOVE] neofetch
 [REMOVE] netpbm
-[REMOVE] network-manager-pptp
 [REMOVE] nm-tray
 [REMOVE] nm-tray-l10n
 [REMOVE] noblenote
