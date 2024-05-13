@@ -1273,7 +1273,6 @@
 [REMOVE] secureboot-db
 [REMOVE] session-migration
 [REMOVE] skanlite
-[REMOVE] snapd
 [REMOVE] software-properties-common
 [REMOVE] software-properties-qt
 [REMOVE] sonnet-plugins:amd64
