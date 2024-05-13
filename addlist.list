@@ -363,3 +363,4 @@
 [ADD] xz-utils
 [ADD] zlib1g:amd64
 [ADD] zstd
+[ADD] mokutil
