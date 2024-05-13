@@ -367,6 +367,7 @@
 [ADD] xxd
 [ADD] xz-utils
 [ADD] zlib1g:amd64
+[ADD] sbsigntool
 [ADD] zstd
 [ADD] mokutil
 [ADD] snapd
