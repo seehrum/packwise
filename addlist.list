@@ -281,6 +281,11 @@
 [ADD] netcat-openbsd
 [ADD] netplan.io
 [ADD] network-manager
+[ADD] glib-networking:amd64
+[ADD] glib-networking-common
+[ADD] glib-networking-services
+[ADD] network-manager-gnome
+[ADD] network-manager-pptp
 [ADD] networkd-dispatcher
 [ADD] nftables
 [ADD] ntfs-3g
